@@ -36,7 +36,7 @@ A single table that lets anyone trace any statement in the final manual back to 
 
 | Claim ID | Claim (plain language) | Confidence | Primary source | Corroborating | Target doc | Target section | Draft status | Publication posture |
 |---|---|:-:|---|---|---|---|:-:|---|
-| **C1** | The feature is called Parent-Child Structure and is configured in the admin panel under Menu → Category → Subcategory → Item. | D+N | `shot_03.png` (breadcrumb visible) + transcript 0:03–0:24 | `plan.md` F1 | `01-explanation.md` | Section: What it is | pending | publish as stated |
+| **C1** | The feature is called Parent-Child Structure and is configured in the admin panel under Menu → Category → Subcategory → Item. | D+N | `shot_03.png` (breadcrumb visible) + transcript 0:03–0:24 | `plan.md` F1 | `01-explanation.md` | Section: What it is / The mental model | **drafted** (2026-04-24) | publish as stated |
 | **C2** | A parent item has a Variants section listing its child items. | D | `shot_05.png` | `shot_12.png` | `01-explanation.md`, `02-howto-create-variant.md` | Explanation: illustration; How-to: Step 2 context | pending | publish as stated |
 | **C3** | There are two ways to add a variant: Add Variant (create new) or the Parent Item dropdown (attach existing). | D+N | `shot_06.png`, `shot_10.png` + transcript 0:38–1:29 | — | `01-explanation.md` (summary); `02-howto-create-variant.md`, `03-howto-attach-existing.md` (detailed) | How-tos, each one flow | pending | publish as stated |
 | **C4** | The Parent Item dropdown lists only items from the same subcategory. | NN | transcript 1:29–1:40 | `shot_10.png` (dropdown visible with one option) | `03-howto-attach-existing.md`; `06-reference-rules.md` R4 | How-to: Prerequisites; Reference: R4 | pending | **publish with hedge** — phrasing must reflect that only a single-option case was shown; recommended wording: "Candidate parents are restricted to items in the same subcategory." |
@@ -55,6 +55,12 @@ A single table that lets anyone trace any statement in the final manual back to 
 | **C16** | The Color Code display option is described in the video as affecting items "outside the parent category" — its behaviour within Parent-Child context is not documented. | NN (self-contradictory narration) | transcript 3:15–3:33 | `shot_19.png` (field visible) | `06-reference-rules.md` R8 (field exists only); `08-known-limitations.md` UK10 | Reference: structural only; Limitations: behaviour | pending | **do not publish behavioural claim** — field-exists statement only |
 
 **Summary**: 17 rows (C6 split into a/b). 11 rows `publish as stated`. 5 rows `publish with hedge` or partial. 1 row `do not publish format` (C14). Alignment with Source Matrix thresholds verified.
+
+### Draft progress as of 2026-04-24
+
+- **Drafted (fully in primary target doc)**: C1 → `01-explanation.md`.
+- **Drafted at summary level in `01-explanation.md` (full coverage pending in how-to / reference)**: C2, C3, C4, C5, C8, C12, C14, C15. Their primary targets are `02`–`06` — status remains `pending` until those files are written.
+- **Not drafted yet**: all other claims.
 
 ## Part 2 — Unknowns tracker (drives `08-known-limitations.md`)
 
