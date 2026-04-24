@@ -26,19 +26,19 @@ If instead you want to turn an existing standalone item into a variant, follow [
 
 2. On the item's detail page, scroll to the **Variants** section.
 
-   ![The Variants section on a parent's detail page](../screens_cropped/shot_05.png)
+   ![The Variants section on a parent's detail page](_assets/shot_05.png)
    *The parent item's detail page has a Variants section where child items are listed.*
 
 3. Click **Add Variant**.
 
-   ![Add Variant button at the bottom of the Variants section](../screens_cropped/shot_06.png)
+   ![Add Variant button at the bottom of the Variants section](_assets/shot_06.png)
    *The Add Variant button sits at the bottom of the Variants section.*
 
 4. Fill in the variant's fields (`Name`, `Price`, and others) using the same procedure as for a basic menu item. `Product Class` is inherited from the parent and does not need to be set — see [Rules reference](06-reference-rules.md) for the inheritance rule.
 
 5. In the **Short Name** field, enter the label that will be shown on POS and in reports — for example, `5"`.
 
-   ![Short Name field on a variant's detail page](../screens_cropped/shot_11.png)
+   ![Short Name field on a variant's detail page](_assets/shot_11.png)
    *When an item is configured as a variant, a Short Name field becomes editable on its detail page.*
 
 6. Click **Save changes**.
@@ -48,7 +48,7 @@ If instead you want to turn an existing standalone item into a variant, follow [
 - A `Product updated` confirmation is shown.
 - The new variant appears in the parent's **Variants** section with its **Short Name**.
 
-![New variant listed inside the parent's Variants section](../screens_cropped/shot_12.png)
+![New variant listed inside the parent's Variants section](_assets/shot_12.png)
 *After saving, the new variant appears in the parent's Variants list with its Short Name and a Product updated confirmation.*
 
 ## Notes

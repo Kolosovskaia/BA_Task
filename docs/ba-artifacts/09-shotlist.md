@@ -23,13 +23,19 @@ Assign each of the 32 screenshots to a specific location in the final manual `do
 
 Each row in the tables below:
 
-- **Shot** — the file in `docs/screens_cropped/shot_XX.png`. All are 1664×887 px, cropped from the 1920×1080 screencast.
+- **Shot** — the source file in `docs/screens_cropped/shot_XX.png`. All are 1664×887 px, cropped from the 1920×1080 screencast.
 - **Target doc** — where the shot goes in `docs/manual/`.
 - **Section** — the subsection within the target doc.
 - **Caption (EN)** — the caption that will appear in the manual under the image, following MS Style Guide (plain, descriptive, complete sentence, period).
 - **Why this shot** — one line on why this particular frame earns its place.
 
 All captions are English (per PO Round 1 Q-4 — EN-only final).
+
+## Path convention
+
+- **Source of truth**: `docs/screens_cropped/shot_XX.png` — full 32-shot archive. Referenced by BA artifacts.
+- **Published to manual**: `docs/manual/_assets/shot_XX.png` — a curated copy of the 20 shots used in the final manual. Referenced by `docs/manual/*.md` with the relative path `_assets/shot_XX.png`.
+- **Reason for the split**: short relative paths (`_assets/shot_XX.png`) render reliably in VSCode markdown preview, GitHub, and other renderers — unlike parent-traversal paths (`../screens_cropped/...`) which can fail in VSCode preview.
 
 ## Summary of decisions
 

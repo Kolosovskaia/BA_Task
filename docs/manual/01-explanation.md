@@ -27,7 +27,7 @@ Two terms carry most of the weight:
 
 A menu item is always in exactly one of three states: **standalone** (no parent, no children), **parent** (has at least one variant), or **variant** (belongs to a parent).
 
-![Admin panel path to Parent-Child Structure](../screens_cropped/shot_03.png)
+![Admin panel path to Parent-Child Structure](_assets/shot_03.png)
 *The admin panel shows the path Menu → Categories → Tarts, with Almondine Tarte listed as a parent item.*
 
 ## The mental model
@@ -53,7 +53,7 @@ flowchart TD
 
 A variant inherits the parent's `Product Class`; the variant keeps its own `Price`, `Modifiers`, and other fields. The exact inheritance and per-variant rules are listed in the rules reference.
 
-![Variants section on a parent's detail page](../screens_cropped/shot_05.png)
+![Variants section on a parent's detail page](_assets/shot_05.png)
 *The Variants section of the Almondine Tarte detail page lists three variants — 3″, 5″, and 8″.*
 
 ## How a variant comes into existence
