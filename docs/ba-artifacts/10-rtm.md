@@ -37,10 +37,10 @@ A single table that lets anyone trace any statement in the final manual back to 
 | Claim ID | Claim (plain language) | Confidence | Primary source | Corroborating | Target doc | Target section | Draft status | Publication posture |
 |---|---|:-:|---|---|---|---|:-:|---|
 | **C1** | The feature is called Parent-Child Structure and is configured in the admin panel under Menu → Category → Subcategory → Item. | D+N | `shot_03.png` (breadcrumb visible) + transcript 0:03–0:24 | `plan.md` F1 | `01-explanation.md` | Section: What it is / The mental model | **drafted** (2026-04-24) | publish as stated |
-| **C2** | A parent item has a Variants section listing its child items. | D | `shot_05.png` | `shot_12.png` | `01-explanation.md`, `02-howto-create-variant.md` | Explanation: illustration; How-to: Step 2 context | pending | publish as stated |
-| **C3** | There are two ways to add a variant: Add Variant (create new) or the Parent Item dropdown (attach existing). | D+N | `shot_06.png`, `shot_10.png` + transcript 0:38–1:29 | — | `01-explanation.md` (summary); `02-howto-create-variant.md`, `03-howto-attach-existing.md` (detailed) | How-tos, each one flow | pending | publish as stated |
+| **C2** | A parent item has a Variants section listing its child items. | D | `shot_05.png` | `shot_12.png` | `01-explanation.md`, `02-howto-create-variant.md` | Explanation: illustration; How-to: Step 2 context | **drafted** (2026-04-24) | publish as stated |
+| **C3** | There are two ways to add a variant: Add Variant (create new) or the Parent Item dropdown (attach existing). | D+N | `shot_06.png`, `shot_10.png` + transcript 0:38–1:29 | — | `01-explanation.md` (summary); `02-howto-create-variant.md`, `03-howto-attach-existing.md` (detailed) | How-tos, each one flow | drafted-partial (2026-04-24: 01 summary + 02 create-side; 03 attach-side pending) | publish as stated |
 | **C4** | The Parent Item dropdown lists only items from the same subcategory. | NN | transcript 1:29–1:40 | `shot_10.png` (dropdown visible with one option) | `03-howto-attach-existing.md`; `06-reference-rules.md` R4 | How-to: Prerequisites; Reference: R4 | pending | **publish with hedge** — phrasing must reflect that only a single-option case was shown; recommended wording: "Candidate parents are restricted to items in the same subcategory." |
-| **C5** | The Short Name field appears on a variant's detail page but not on a standalone item's. | D | `shot_11.png` + `shot_09.png` (absent in standalone state) | transcript 1:40–1:56 | `02-howto-create-variant.md`, `03-howto-attach-existing.md`, `06-reference-rules.md` R2 | How-to: Step; Reference: R2 | pending | publish as stated |
+| **C5** | The Short Name field appears on a variant's detail page but not on a standalone item's. | D | `shot_11.png` + `shot_09.png` (absent in standalone state) | transcript 1:40–1:56 | `02-howto-create-variant.md`, `03-howto-attach-existing.md`, `06-reference-rules.md` R2 | How-to: Step; Reference: R2 | drafted-partial (2026-04-24: 02 create-side; 03 and R2 pending) | publish as stated |
 | **C6a** | When a variant that was originally standalone is detached, it returns to the item list as a standalone. | D+N | `shot_07.png` → `shot_08.png` sequence + transcript 1:05–1:15 | `plan.md` F3 | `05-howto-remove-variant.md`; `06-reference-rules.md` R5 | How-to: Branch A; Reference: R5 table | pending | publish as stated |
 | **C6b** | When a variant that was created inside a parent is detached, it is permanently deleted. | NN | transcript 6:37–7:16 (restated) | PO Round 1 confirmation (`docs/po-answers-2026-04-24.md` Q-3) | `05-howto-remove-variant.md`; `06-reference-rules.md` R5 | How-to: Branch B + **warning callout**; Reference: R5 table | pending | publish as stated (PO-confirmed; treat as reliable) |
 | **C7** | Variants can be reordered by drag; the admin-saved order determines the order shown on POS. | D+N | `shot_13.png` + transcript 2:06–2:25 | `shot_15.png` (POS result) | `04-howto-reorder-variants.md`; `06-reference-rules.md` R6 | How-to: Part 1; Reference: R6 POS row | pending | publish as stated |
@@ -58,9 +58,12 @@ A single table that lets anyone trace any statement in the final manual back to 
 
 ### Draft progress as of 2026-04-24
 
-- **Drafted (fully in primary target doc)**: C1 → `01-explanation.md`.
-- **Drafted at summary level in `01-explanation.md` (full coverage pending in how-to / reference)**: C2, C3, C4, C5, C8, C12, C14, C15. Their primary targets are `02`–`06` — status remains `pending` until those files are written.
+- **Drafted (fully in primary target docs)**: C1, C2.
+- **Drafted partially** (one primary target done, one or more remaining): C3 (01 + 02; waiting 03), C5 (02; waiting 03 + R2 in 06), C6b warning cross-link (02 notes), UK8 cross-link (02 notes → 08).
+- **Touched at summary level in `01-explanation.md`** (primary targets still pending): C4, C8, C12, C14, C15.
 - **Not drafted yet**: all other claims.
+
+Files published in `docs/manual/` so far: `01-explanation.md`, `02-howto-create-variant.md`.
 
 ## Part 2 — Unknowns tracker (drives `08-known-limitations.md`)
 
