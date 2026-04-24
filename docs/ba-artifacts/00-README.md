@@ -30,8 +30,10 @@ Each file is numbered by **production order**, not by reading priority. If you n
 | 06 | `06-source-matrix.md` | For every statement we might write in the manual, how solid is the source? | Step 5 |
 | 07 | `07-scenarios.md` | What user flows become the how-to pages in the manual? | Step 7 |
 | 08 | `08-ia.md` | How does the final `docs/manual/` folder map onto these scenarios and rules? | Step 8 |
+| 09 | `09-shotlist.md` | Which of the 32 screenshots go where in the final manual, with captions? | Step 9 |
+| 10 | `10-rtm.md` | For every claim we might publish, what's the evidence and where does it land? | Step 10 |
 
-**Steps 6, 9, 10** (Scope Register, Shot-list, RTM skeleton) are not yet produced — partly blocked on Round 2 answers from PO.
+**Step 6** (Scope Register) is not yet produced — blocked on Round 2 answers from PO.
 
 ## Human-language summary per file
 
@@ -97,6 +99,23 @@ Five user flows that turn into how-to pages in the final manual:
 
 Three extra scenarios are held in reserve — they activate only if Maya answers the Round 2 questions with "include in v1" (parent-delete cascade, migration, discounts).
 
+### 09-shotlist.md — "Which shot goes where"
+
+For each of the 32 screenshots, the file says: does it go into the final manual (and if so, into which doc, which section, with what caption) or is it excluded (and why).
+
+- **19 shots used** across 5 how-tos + 1 reference file.
+- **3 optional shots** included only if length permits.
+- **10 shots excluded** (branding, transitions, generic navigation that the parent manual already covers).
+- **No orphaned shots** — every frame has a routing decision.
+
+### 10-rtm.md — "Trace every claim to its evidence"
+
+The Requirements Traceability Matrix. One row per claim (C1–C16) with: plain-language statement, source (shot / transcript / PO answer), confidence, target doc in `docs/manual/`, target section, draft status, and publication posture (publish as stated / publish with hedge / do not publish format).
+
+Plus a second table for the 12 unknowns (UK1–UK12) — what's known about why it's unknown, and where it will end up in the final manual.
+
+Plus a reserved-IDs block for claims that **may** emerge from Maya's Round 2 answers (C17–C21) — pre-slotted so we don't have to restructure when they land.
+
 ### 08-ia.md — "The final manual's structure"
 
 The blueprint for `docs/manual/`: 9 files organized using the **Diátaxis** framework:
@@ -160,8 +179,6 @@ Same idea as above, different scope:
 ## What's still missing (to be produced)
 
 - `07-scope.md` (Step 6) — awaiting PO Round 2 answers.
-- `09-shotlist.md` (Step 9) — assign each screenshot to a specific location in the manual.
-- `10-rtm.md` (Step 10) — one row per claim, mapped to the doc it lives in.
 - `11-…` QA artifacts (Phase 5).
 
 ## Note on numbering
