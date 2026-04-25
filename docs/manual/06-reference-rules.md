@@ -37,7 +37,7 @@ The feature affects four surfaces. Each row links to the rule(s) that govern it.
 |---|---|---|
 | Admin panel | A parent item's detail page has a **Variants** section listing its variants. Each variant has its own editable detail page. | R2, R3, R4, R5, R7, R8 |
 | POS (cashier-side) | Tapping a parent opens a row of variant buttons labelled with `Short Name`. The variant marked `Pre Chosen` is visually pre-selected. Order matches the admin-saved order. | R6.1 |
-| Order preview | A selected variant displays as two lines: the parent name on top, the `Short Name` and modifier choices beneath. | R6.2 |
+| Order preview | A selected variant shows the parent name together with the `Short Name` and modifier choices. | R6.2 |
 | Kitchen ticket | The ticket includes the item's identifying name. The exact layout is **not documented in v1**. | R6.3 |
 | ProductMix report | A sold variant appears under a composite label that includes both the parent name and the `Short Name`. | R6.4 |
 
@@ -66,11 +66,11 @@ This rule is stated by the product owner. The variant's UI displays the Product 
 
 ## R4. Subcategory scope for parent selection
 
-When you open the **Parent Item** dropdown on a standalone item, the candidates are restricted to items in the **same subcategory**.
+In the observed flow, opening the **Parent Item** dropdown on a standalone item shows candidates from the **same subcategory**.
 
 | Rule | Behaviour |
 |---|---|
-| Same subcategory | An item from a different subcategory cannot be selected as a parent. |
+| Same subcategory | In the observed flow, items from a different subcategory are not offered as parent candidates. |
 | Cross-subcategory move | Not covered as a Parent-Child action. To attach a parent from another subcategory you must first move the item into that subcategory using the standard item configuration. |
 
 This rule is product-owner-stated; in the source materials the dropdown is shown with a single matching candidate, which establishes the constraint without exhaustively demonstrating cross-subcategory rejection. See [How to attach an existing item](03-howto-attach-existing.md) for the procedure.
@@ -107,8 +107,8 @@ The variant-born branch is product-owner-stated and not separately re-demonstrat
 
 ### R6.2 Order preview
 
-![Order preview with parent name on top and Short Name beneath](_assets/shot_23.png)
-*An added variant appears in the order summary as two lines: the parent name on top, the `Short Name` and modifier selections beneath.*
+![Order preview with parent name, Short Name, and selected modifiers](_assets/shot_23.png)
+*In the order summary, the selected variant shows the parent name together with the `Short Name` and modifier selections.*
 
 | Element | Rule |
 |---|---|
@@ -121,7 +121,7 @@ The kitchen ticket includes the item's full identifying name. **The exact layout
 
 ### R6.4 ProductMix report
 
-![ProductMix report row for a variant](_assets/shot_27.png)
+![ProductMix report row for a variant](_assets/shot_34.png)
 *In the ProductMix report, a sold variant appears under a composite label that includes both the parent name and the `Short Name`.*
 
 | Element | Rule |

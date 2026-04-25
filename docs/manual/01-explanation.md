@@ -61,7 +61,7 @@ A variant inherits the parent's `Product Class`; the variant keeps its own `Pric
 A variant appears in a parent's `Variants` section in one of two ways:
 
 - **Created inside the parent.** Clicking `Add Variant` on the parent's detail page creates a brand-new item that exists only as a variant.
-- **Attached from the item list.** Opening an existing standalone item and choosing a parent from the `Parent Item` dropdown turns that item into a variant of the chosen parent. The candidate parent must be in the same subcategory.
+- **Attached from the item list.** Opening an existing standalone item and choosing a parent from the `Parent Item` dropdown turns that item into a variant of the chosen parent. In the observed flow, parent candidates are restricted to items in the same subcategory.
 
 The two origins matter because **detach behaviour differs based on origin** - see how to remove a variant.
 
@@ -71,7 +71,7 @@ The feature affects four surfaces. The rules reference documents each one; short
 
 - **Admin.** Each variant is listed under its parent in the `Variants` section and has its own editable detail page.
 - **POS.** A parent item opens to a row of variant buttons labelled with `Short Name`. One variant can be marked `Pre Chosen` to appear pre-selected.
-- **Kitchen ticket.** A purchased variant prints to the kitchen with the item's full identifying name.
+- **Kitchen ticket.** A purchased variant reaches the kitchen with the item's full identifying name; the exact layout is not documented in v1.
 - **ProductMix report.** Each sold variant appears under a composite label that includes both the parent name and the `Short Name`.
 
 ## Where to go next

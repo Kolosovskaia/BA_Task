@@ -84,11 +84,11 @@ Read once at normal pace; only friction recorded.
 
 **Before**:
 
-> You know whether the variant was **created inside the parent** (via [How to create a new variant](02-howto-create-variant.md)) or **attached from the item list** (via [How to attach an existing item](03-howto-attach-existing.md)). If you do not know, treat the operation as destructive — see the warning below.
+> You know whether the variant was **created inside the parent** (via [How to create a new variant](../manual/02-howto-create-variant.md)) or **attached from the item list** (via [How to attach an existing item](../manual/03-howto-attach-existing.md)). If you do not know, treat the operation as destructive — see the warning below.
 
 **After**:
 
-> You know the variant's **origin** — whether it was created inside the parent (with **Add Variant** — see [How to create a new variant](02-howto-create-variant.md)) or attached from the item list (via the **Parent Item** dropdown — see [How to attach an existing item](03-howto-attach-existing.md)). If you do not know, treat the operation as destructive — see the warning below.
+> You know the variant's **origin** — whether it was created inside the parent (with **Add Variant** — see [How to create a new variant](../manual/02-howto-create-variant.md)) or attached from the item list (via the **Parent Item** dropdown — see [How to attach an existing item](../manual/03-howto-attach-existing.md)). If you do not know, treat the operation as destructive — see the warning below.
 
 Why: the original phrasing tied origin to a how-to file rather than to a UI action. Renamed-on-the-fly to reference the UI action (`Add Variant` / `Parent Item` dropdown) and demoted the file links to "see also" parentheticals. Reader still gets the link, but the rule is anchored to UI behaviour.
 

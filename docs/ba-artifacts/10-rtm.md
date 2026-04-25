@@ -8,10 +8,10 @@ sources:
   - 08-ia.md (target docs)
   - 09-shotlist.md (screenshot anchors)
 phase: 3 — Scope lock & IA (Step 10)
-status: skeleton — rows populated from current evidence; "Draft status" column will be filled during Phase 4 (Drafting) and Phase 5 (Validation)
+status: validated for v1 — rows updated after drafting, screenshot replacement, and internal review
 ---
 
-# Requirements Traceability Matrix (RTM) Skeleton
+# Requirements Traceability Matrix (RTM)
 
 ## Purpose
 
@@ -37,7 +37,7 @@ A single table that lets anyone trace any statement in the final manual back to 
 | Claim ID | Claim (plain language) | Confidence | Primary source | Corroborating | Target doc | Target section | Draft status | Publication posture |
 |---|---|:-:|---|---|---|---|:-:|---|
 | **C1** | The feature is called Parent-Child Structure and is configured in the admin panel under Menu → Category → Subcategory → Item. | D+N | `shot_03.png` (breadcrumb visible) + transcript 0:03–0:24 | `plan.md` F1 | `01-explanation.md` | Section: What it is / The mental model | **drafted** (2026-04-24) | publish as stated |
-| **C2** | A parent item has a Variants section listing its child items. | D | `shot_05.png` | `shot_12.png` | `01-explanation.md`, `02-howto-create-variant.md` | Explanation: illustration; How-to: Step 2 context | **drafted** (2026-04-24) | publish as stated |
+| **C2** | A parent item has a Variants section listing its child items. | D | `shot_05.png` | `shot_33.png` | `01-explanation.md`, `02-howto-create-variant.md` | Explanation: illustration; How-to: Step 2 context | **drafted** (2026-04-24) | publish as stated |
 | **C3** | There are two ways to add a variant: Add Variant (create new) or the Parent Item dropdown (attach existing). | D+N | `shot_06.png`, `shot_10.png` + transcript 0:38–1:29 | — | `01-explanation.md` (summary); `02-howto-create-variant.md`, `03-howto-attach-existing.md` (detailed) | How-tos, each one flow | **drafted** (2026-04-25) | publish as stated |
 | **C4** | The Parent Item dropdown lists only items from the same subcategory. | NN | transcript 1:29–1:40 | `shot_10.png` (dropdown visible with one option) | `03-howto-attach-existing.md`; `06-reference-rules.md` R4 | How-to: Prerequisites; Reference: R4 | **drafted** (2026-04-25) — phrased as "Candidate parents are restricted to items in the same subcategory" | **publish with hedge** — phrasing applied as recommended |
 | **C5** | The Short Name field appears on a variant's detail page but not on a standalone item's. | D | `shot_11.png` + `shot_09.png` (absent in standalone state) | transcript 1:40–1:56 | `02-howto-create-variant.md`, `03-howto-attach-existing.md`, `06-reference-rules.md` R2 | How-to: Step; Reference: R2 | **drafted** (2026-04-25) | publish as stated |
@@ -45,16 +45,16 @@ A single table that lets anyone trace any statement in the final manual back to 
 | **C6b** | When a variant that was created inside a parent is detached, it is permanently deleted. | NN | transcript 6:37–7:16 (restated) | PO Round 1 confirmation (`docs/po-answers-2026-04-24.md` Q-3) | `05-howto-remove-variant.md`; `06-reference-rules.md` R5 | How-to: Branch B + **warning callout**; Reference: R5 table | **drafted** (2026-04-25) — destructive-action warning callout added | publish as stated (PO-confirmed; treat as reliable) |
 | **C7** | Variants can be reordered by drag; the admin-saved order determines the order shown on POS. | D+N | `shot_13.png` + transcript 2:06–2:25 | `shot_15.png` (POS result) | `04-howto-reorder-variants.md`; `06-reference-rules.md` R6 | How-to: Part 1; Reference: R6 POS row | **drafted** (2026-04-25) | publish as stated |
 | **C8** | A variant can be marked Pre Chosen; on POS it appears visually pre-selected. | D+N | `shot_13.png` (toggle) + `shot_15.png` (POS) | transcript 2:06–2:25 | `04-howto-reorder-variants.md`; `06-reference-rules.md` R6 | How-to: Part 2 + Verification; Reference: R6 | **drafted** (2026-04-25) | publish as stated |
-| **C9** | A variant has its own Price, configurable independently. | NN | transcript 2:43–2:55 | `shot_17.png` (Price field visible in Edit Variant) | `06-reference-rules.md` R6 | Reference: Variant-level fields (R7 table) | **drafted** (2026-04-25) | publish as stated (low-risk structural claim) |
+| **C9** | A variant has its own Price, configurable independently. | NN | transcript 2:43–2:55 | `shot_17.png` (Price field visible in Edit Variant) | `06-reference-rules.md` R7 | Reference: Variant-level fields (R7 table) | **drafted** (2026-04-25) | publish as stated (low-risk structural claim) |
 | **C10** | A variant's Product Class is inherited from its parent and is not editable at the variant level. | NN | transcript 2:43–2:55 | `shot_17.png` (Product class = Food on a variant) | `06-reference-rules.md` R3 | Reference: R3 | **drafted** (2026-04-25) — phrased as "inherited from its parent and displayed on the variant"; "read-only" assertion deliberately omitted | **publish with hedge** — applied |
 | **C11** | A variant has its own Modifiers and Allergens lists. The effect of Modifiers when the item is inside a Parent-Child context is not documented. | D (fields) + NN (independence) + contradictory (behaviour) | `shot_18.png` + transcript 2:55–3:15 | — | `06-reference-rules.md` R7; `08-known-limitations.md` UK10 | Reference: structural only; Limitations: behavioural note | **drafted** (2026-04-25) — structural in R7; behavioural deferred to UK10 | **publish with hedge** — applied |
 | **C12** | On POS, under a parent item, variants appear as tappable buttons labelled with Short Name. | D | `shot_15.png`, `shot_21.png`, `shot_22.png` | transcript 3:47–3:54 | `04-howto-reorder-variants.md` (Verification); `06-reference-rules.md` R6 | How-to: Verification; Reference: R6 POS | **drafted** (2026-04-25) | publish as stated |
-| **C13** | On the order preview, a selected variant shows the parent name as the main line with the Short Name and modifier choices beneath. | D+N | `shot_23.png` + transcript 3:54–4:34 | — | `06-reference-rules.md` R6 | Reference: R6 Order preview | **drafted** (2026-04-25) | publish as stated |
+| **C13** | On the order preview, a selected variant shows the parent name together with the Short Name and modifier choices. | D+N | `shot_23.png` + transcript 3:54–4:34 | — | `06-reference-rules.md` R6 | Reference: R6 Order preview | **drafted** (2026-04-25) | publish as stated |
 | **C14** | The kitchen ticket includes the item's full identifying name. The exact layout of that name is not shown in the source materials. | NN-only | transcript 4:34–4:49 | `plan.md` F11 | `06-reference-rules.md` R6 (short neutral note); `08-known-limitations.md` UK7 | Reference: short note; Limitations: detailed | **drafted** (2026-04-25) — R6.3 carries only the neutral statement; layout flagged under UK7 | **do not publish format** — applied |
-| **C15** | In the ProductMix report, a sold variant appears under a composite label that includes both the parent name and the Short Name — not the parent name alone, and not the Short Name alone. | D+N | `shot_27.png`, `shot_28.png`, `shot_29.png` (observed label "Cafe Sua Da – Small Cafe Sua Da") + transcript 5:12–6:26 | `plan.md` F12 (narration — but on-screen resolves the apparent contradiction with F10) | `06-reference-rules.md` R6 | Reference: R6 ProductMix | **drafted** (2026-04-25) — reframing applied; visible label format quoted as the example | publish as stated (**reframed** from Maya's "not parent name" narration to reflect what is actually on screen) |
+| **C15** | In the ProductMix report, a sold variant appears under a composite label that includes both the parent name and the Short Name — not the parent name alone, and not the Short Name alone. | D+N | `shot_34.png`, `shot_28.png`, `shot_29.png` (observed label "Cafe Sua Da – Small Cafe Sua Da") + transcript 5:12–6:26 | `plan.md` F12 (narration — but on-screen resolves the apparent contradiction with F10) | `06-reference-rules.md` R6 | Reference: R6 ProductMix | **drafted** (2026-04-25) — reframing applied; visible label format quoted as the example | publish as stated (**reframed** from Maya's "not parent name" narration to reflect what is actually on screen) |
 | **C16** | The Color Code display option is described in the video as affecting items "outside the parent category" — its behaviour within Parent-Child context is not documented. | NN (self-contradictory narration) | transcript 3:15–3:33 | `shot_19.png` (field visible) | `06-reference-rules.md` R8 (field exists only); `08-known-limitations.md` UK10 | Reference: structural only; Limitations: behaviour | **drafted** (2026-04-25) — R8 keeps field-exists statement; behaviour deferred to UK10 | **do not publish behavioural claim** — applied |
 
-**Summary**: 17 rows (C6 split into a/b). 11 rows `publish as stated`. 5 rows `publish with hedge` or partial. 1 row `do not publish format` (C14). Alignment with Source Matrix thresholds verified.
+**Summary**: 17 rows (C6 split into a/b). 12 rows `publish as stated`. 3 rows `publish with hedge` or partial. 2 rows keep only neutral structural wording in the body while risky detail stays out of scope (`C14`, `C16`). Alignment with Source Matrix thresholds verified.
 
 ### Draft progress as of 2026-04-25
 
@@ -69,19 +69,19 @@ Files published in `docs/manual/` so far:
 - `04-howto-reorder-variants.md`, `05-howto-remove-variant.md`,
 - `06-reference-rules.md`, `07-reference-glossary.md`, `08-known-limitations.md`.
 
-Phase 4 (Drafting) is complete. Phase 5 (Validation) is in progress.
+Phase 4 (Drafting) is complete. Phase 5 (Validation) is complete. Repository packaging and handover cleanup are the remaining work.
 
 ## Part 2 — Unknowns tracker (drives `08-known-limitations.md`)
 
 Each row here becomes a row in the Known Limitations table of the final manual.
 
-| Unknown ID | Topic | Why it's unknown | Current route | PO Round 2 dependency |
+| Unknown ID | Topic | Why it's unknown | Current route | Future PO clarification needed? |
 |---|---|---|---|:-:|
-| **UK1** | What happens to variants when the PARENT item is deleted. | The scenario is not shown in the video and Maya's Round 1 answer addressed variant-detach instead. Re-asked in Round 2. | `08-known-limitations.md` unless PO elects to include in v1. | ✅ |
-| **UK2** | Whether a variant can itself be a parent of sub-variants (multi-level nesting). | Not shown; the video demonstrates exactly one level. | `08-known-limitations.md` unless PO confirms a limit (e.g., "one level only"), in which case it becomes a rule in `06-reference-rules.md`. | ✅ |
-| **UK3** | Migration behaviour when a restaurant enables Parent-Child with pre-existing legacy items. | The feature is already in production; the before/after state is not in the video. | `08-known-limitations.md` unless PO provides migration description. | ✅ |
-| **UK4** | How discounts interact with Parent-Child (parent-level vs variant-level; precedence rules). | Not shown, not narrated. | `08-known-limitations.md` unless PO provides semantics. | ✅ |
-| **UK5** | Role-based permissions for creating, detaching, or deleting under Parent-Child. | Not shown, not narrated. | `08-known-limitations.md` unless PO provides a permission model. | ✅ |
+| **UK1** | What happens to variants when the PARENT item is deleted. | The scenario is not shown in the video and Maya's Round 1 answer addressed variant-detach instead. | `08-known-limitations.md` for v1. | ✅ |
+| **UK2** | Whether a variant can itself be a parent of sub-variants (multi-level nesting). | Not shown; the video demonstrates exactly one level. | `08-known-limitations.md` for v1; promote to a rule only if clarified later. | ✅ |
+| **UK3** | Migration behaviour when a restaurant enables Parent-Child with pre-existing legacy items. | The feature is already in production; the before/after state is not in the video. | `08-known-limitations.md` for v1. | ✅ |
+| **UK4** | How discounts interact with Parent-Child (parent-level vs variant-level; precedence rules). | Not shown, not narrated. | `08-known-limitations.md` for v1. | ✅ |
+| **UK5** | Role-based permissions for creating, detaching, or deleting under Parent-Child. | Not shown, not narrated. | `08-known-limitations.md` for v1. | ✅ |
 | **UK6** | Maximum number of variants per parent. | Not shown, not narrated. | `08-known-limitations.md`. | — |
 | **UK7** | Exact layout of the item name on the kitchen ticket. | Kitchen ticket is never shown in the video. | `08-known-limitations.md`. | Optional — could fold into Round 2 if PO has the ticket template handy. |
 | **UK8** | Short Name length and character constraints. | Not shown; only `5'` entered as a sample value. | `08-known-limitations.md`. | — |
@@ -90,11 +90,11 @@ Each row here becomes a row in the Known Limitations table of the final manual.
 | **UK11** | Import / export, API, bulk operations on Parent-Child. | Out of screencast scope. | `08-known-limitations.md` (explicit out-of-scope). | — |
 | **UK12** | Localization of Short Name across language menus. | Not shown, not narrated. | `08-known-limitations.md` (explicit out-of-scope). | — |
 
-**Round 2 gate** (originally pending PO answers): per user direction on 2026-04-25, no Round 2 questions are sent and no answers are awaited. UK1–UK5 therefore stay in `08-known-limitations.md` for v1, with the recorded resolution path of "ask the Gen1POS product owner" should the gap need to be closed in a later revision.
+**PO clarification gate**: per user direction on 2026-04-25, no Round 2 questions are sent and no answers are awaited for v1. UK1–UK5 therefore stay in `08-known-limitations.md`, with the recorded resolution path of "ask the Gen1POS product owner" if the gap needs to be closed later.
 
-## Part 3 — Claims pending (conditional on Round 2) — deferred to v2
+## Part 3 — Claims reserved for a future revision
 
-Reserved IDs originally held for claims that would emerge from Round 2 PO answers. Per user direction on 2026-04-25, Round 2 is not run for v1; these IDs stay reserved for a future revision and are not used in v1 of the manual.
+Reserved IDs originally held for claims that would emerge from later PO clarifications. Per user direction on 2026-04-25, no Round 2 is run for v1; these IDs stay reserved for a future revision and are not used in v1 of the manual.
 
 | Reserved ID | Original condition | Target doc (if confirmed in a later revision) |
 |---|---|---|
@@ -110,4 +110,4 @@ Every claim C1–C16 is assigned to at least one target doc.
 Every shot used in `09-shotlist.md` supports at least one claim.
 All 12 unknowns UK1–UK12 have a routing decision.
 
-Next deliverable update: after Maya's Round 2 answers arrive, re-run this RTM to move UK → C transitions and lock in `07-scope.md` (Step 6). After that, Phase 4 (Drafting) begins.
+Next deliverable update: final repository packaging and handover note after the consistency pass is complete.

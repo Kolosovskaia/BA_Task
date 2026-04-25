@@ -7,7 +7,7 @@ sources:
   - docs/Meeting Recording Transcription.md
   - docs/transcription.srt
   - docs/narrative_film_storyboard-2026-04-24.md (32-shot breakdown)
-  - docs/screens_cropped/shot_01.png ... shot_32.png
+  - docs/screens_cropped/shot_01.png ... shot_34.png
 phase: 2 — Evidence extraction
 ---
 
@@ -39,7 +39,7 @@ For every observable action in the video, classify what we actually know vs. wha
 | 9 | 1:15–1:29 | "5″ Almondine Tarte" detail page; `Parent Item` dropdown shows "None (Standalone)" | "Могу обратно добавить через Parent Item" | Standalone item has a `Parent Item` dropdown currently set to `None (Standalone)` | DO | F2 |
 | 10 | 1:29–1:40 | `Parent Item` dropdown opens, shows "Almondine Tarte" as option; user selects it | "Здесь можно выбрать любой айтем из данной субкатегории" | `Parent Item` dropdown lists items from the SAME subcategory | DO+NN | F13 — scope constraint |
 | 11 | 1:40–1:56 | After selecting parent: `Short Name` field appears, user types `5'`; clicks "Save changes" | "Появляется дополнительное поле — это Short Name" | When an item is attached as a variant, a `Short Name` field becomes visible on its detail page | DO+NN | F4 |
-| 12 | 1:56–2:06 | Back on parent "Almondine Tarte" detail; variant list now shows "5″" with Short Name `5'`; toast "Product updated" | "Теперь он отображается как отдельный айтем внутри Almondine Tarte" | Attached variant appears in the parent's Variants section with its Short Name | DO | F4 |
+| 33 | 2:05–2:08 | Back on parent "Almondine Tarte" detail; variant list now clearly shows `5″ Almondine Tarte` in the Variants section | "Теперь он отображается как отдельный айтем внутри Almondine Tarte" | Attached variant appears in the parent's Variants section with its Short Name | DO | F4 — replacement frame for the earlier shot 12 |
 | 13 | 2:06–2:25 | User drags variants to reorder to 5″, 3″, 8″; toggles "Pre Chosen" on 5″; clicks "Save changes" | "Варианты можно двигать, это влияет на то, как они будут отображаться на POS стороне" + "можно выбрать, какие будут Pre Chosen" | Variants are reorderable by drag; one (at least) can be marked Pre Chosen | DO+NN | F5, F6 |
 | 14 | 2:25–2:30 | Toast "Product updated" | — | Save acknowledgement | DO | — |
 | 15 | 2:30–2:40 | POS interface; "Almondine Tarte" opened; buttons `3'`, `5'`, `8'` appear; `5'` highlighted | "Пятый как сейчас Pre Chosen" | On POS, variants appear as selectable buttons under parent; pre-chosen one is visually highlighted | DO+NN | F6, F10 (partial: POS-level) |
@@ -50,11 +50,11 @@ For every observable action in the video, classify what we actually know vs. wha
 | 20 | 3:33–3:47 | Back on "Almondine Tarte" detail page | "Parent-Child — новая фича, влияет на все части проекта, на POS сторону…" | Feature is new; affects POS, kitchen, reports | NN | Meta-claim |
 | 21 | 3:47–3:54 | POS interface; "Almondine Tarte" variants visible | "Если у айтема parent-child, они появляются как варианты" | On POS, items with Parent-Child appear with their variants as selectable options | DO | F10 |
 | 22 | 3:54–4:18 | Navigate to "Cafe Sua Da" on POS; opens parent; variants `Small`, `Large`, `M`; user taps `Small`, then `Coconut Milk`, then `Cold` | "У каждого разные эмоции (sic: modifiers), которые можно настроить индивидуально" | Another example of parent with variants (Small/Large/M); each variant can have its own modifier choices at purchase time | DO+NN | Corroborates F6, adds M-variant (=Medium?) |
-| 23 | 4:18–4:34 | Order preview shows "Cafe Sua Da Small" with "Coconut Milk Cold" underneath; clicks "Add to Order" | "Отображается parent-имя и рядом внизу Short Name" | Order line displays parent name + variant short name (two-line format) | DO+NN | F10 |
+| 23 | 4:18–4:34 | Order preview shows "Cafe Sua Da Small" with "Coconut Milk Cold" underneath; clicks "Add to Order" | "Отображается parent-имя и рядом внизу Short Name" | Order line displays the parent name together with the variant short name and selected modifiers | DO+NN | F10 |
 | 24 | 4:34–4:49 | Payment screen; selects `Cash`, inputs `20.00`, clicks `Pay`; "Payment successful" dialog | "На заказе на кухню появится полностью название айтема" | Kitchen receives the item with "full name"; semantics of "full name" NOT verifiable from this shot (no kitchen ticket image) | NN only | G7 — kitchen ticket format not shown |
 | 25 | 4:49–4:56 | Admin panel; clicks "Reporting" | "Название айтема влияет на то, как оно отображается в репортах" | Reports reflect item naming; specifically linked to Parent-Child concept | NN | — |
 | 26 | 4:56–5:12 | ProductMix report; pie charts; date range opened; "Today" selected and Applied | "Здесь можно посмотреть, какие айтемы проданы. Когда продаётся какой-то из вариантов внутри парента…" | ProductMix is the report used; it filters by date range | DO | — |
-| 27 | 5:12–5:20 | Report updated; chart shows "Cafe Sua Da – Small Cafe Sua Da" | "Его вариативное имя, а не имя его parent'а" | Report displays the variant's name, not the parent's | DO+NN | F12 — but label format "Cafe Sua Da – Small Cafe Sua Da" suggests parent+short composite, not short alone. Internal contradiction with "not parent name". |
+| 34 | 6:20–6:26 | Report filtered to a narrow window; chart legend clearly shows "Cafe Sua Da – Small Cafe Sua Da" | "Отображается Cafe Sua Da и его короткое имя. Вижу полностью его имя, как оно есть" | Report displays a composite variant label that includes both parent and Short Name | DO+NN | F12 — replacement frame for the earlier shot 27; clearer evidence than the wider report view. |
 | 28 | 5:20–5:34 | Hovering pie chart segment shows "Cafe Sua Da – Small Cafe Sua Da" | "При наведении будет его вариативное имя" | Hover tooltip shows the same composite label | DO | Reinforces composite format observation |
 | 29 | 5:34–6:26 | Custom date range set to narrow window; report now shows only `Cafe Sua Da – Small Cafe Sua Da` | "Отображается Cafe Sua Da и его короткое имя. Вижу полностью его имя, как оно есть" | Filtering to specific window isolates the variant; Maya calls the composite label both "variant name" and "full name with short name" | DO+NN | Strong evidence that "variant name" in ProductMix = `Parent Name – Short Name Parent Name` (repeated). Needs glossary consolidation. |
 | 30 | 6:26–6:37 | Back to admin; "Tarts" → "Almondine Tarte" detail | — | Navigation only | DO | — |
@@ -66,10 +66,10 @@ For every observable action in the video, classify what we actually know vs. wha
 | ID | Claim | Confidence | Source shots |
 |---|---|:-:|---|
 | C1 | Feature is called "Parent-Child Structure"; configured in admin panel under Menu → Category → Subcategory → Item | DO+NN | 3, 4 |
-| C2 | A parent item has a "Variants" section listing its children | DO | 5, 12 |
+| C2 | A parent item has a "Variants" section listing its children | DO | 5, 33 |
 | C3 | Two ways to add a variant to a parent: (a) Add Variant button (create new), (b) via `Parent Item` dropdown on an existing item | DO+NN | 6, 9, 10 |
 | C4 | `Parent Item` dropdown lists items from the SAME subcategory only | NN | 10 |
-| C5 | When an item is attached as a variant, a `Short Name` field becomes visible on its detail page | DO | 11, 12 |
+| C5 | When an item is attached as a variant, a `Short Name` field becomes visible on its detail page | DO | 11, 33 |
 | C6 | Detach behaviour is origin-dependent: standalone-origin → returns to item list; variant-born → disappears | DO (branch A) + NN (branch B) | 7, 8, 31 |
 | C7 | Variants are reorderable by drag; order affects POS display | DO+NN | 13, 15 |
 | C8 | A variant can be marked Pre Chosen; on POS it is visually pre-selected | DO+NN | 13, 15 |
@@ -77,9 +77,9 @@ For every observable action in the video, classify what we actually know vs. wha
 | C10 | Variant inherits Product Class from parent (not editable at variant level) | NN | 17 |
 | C11 | Variant has independent Modifiers and Allergens | DO (fields present) + NN (independence rule) | 18 |
 | C12 | POS shows variants as tappable buttons labeled with Short Name under the parent | DO | 15, 21, 22 |
-| C13 | Order preview shows `parent name` + `short name` in two-line format | DO+NN | 23 |
+| C13 | Order preview shows the `parent name` together with the `short name` and selected modifiers | DO+NN | 23 |
 | C14 | Kitchen ticket shows the "full name" of the item — exact format NOT visible in video | NN only | 24 |
-| C15 | ProductMix report displays a composite label `Parent Name – Short Name Parent Name` for sold variants | DO+NN | 27, 28, 29 |
+| C15 | ProductMix report displays a composite label `Parent Name – Short Name Parent Name` for sold variants | DO+NN | 34, 28, 29 |
 | C16 | Variant's Color code display option "only affects item outside parent-child context" | NN | 19 |
 
 ## Unknowns (UK) — will map to `08-known-limitations.md`
@@ -101,12 +101,12 @@ For every observable action in the video, classify what we actually know vs. wha
 
 ## Internal contradictions spotted
 
-1. **"Variant name" vs "Parent Name + Short Name"** (shots 27–29 vs shot 23). Maya says in reports it's the variant name, "not the parent", but the visible label is `Cafe Sua Da – Small Cafe Sua Da`, which contains parent twice. Resolution: **treat "variant name" as a composite label rather than a standalone field**. Document as such, flag in glossary.
+1. **"Variant name" vs "Parent Name + Short Name"** (shots 34, 28, 29 vs shot 23). Maya says in reports it's the variant name, "not the parent", but the visible label is `Cafe Sua Da – Small Cafe Sua Da`, which contains parent twice. Resolution: **treat "variant name" as a composite label rather than a standalone field**. Document as such, flag in glossary.
 
 2. **Color code and Modifiers "outside parent-child"** — narration repeats this phrase, but the meaning of "outside" is never defined. Resolution: document observable (field exists; inheritance rule not asserted) and flag UK10 for limitations.
 
 ## Provenance statistics
 
 - Total distinct claims: 16 (C1–C16) + 12 unknowns (UK1–UK12)
-- Direct observation (DO or DO+NN): 12 / 16 ≈ **75%** — meets Phase 2 DoD (≥70% direct in confirmed scope).
-- Narrated only (NN): 4 / 16 (C4, C9, C10, C14, C16) — flagged accordingly in Source Matrix.
+- Claims with direct visual support participating in the evidence: 12 / 16 ≈ **75%** — meets Phase 2 DoD (≥70% direct in confirmed scope).
+- Claims whose final publication posture depends primarily on narration or hedged interpretation: C4, C9, C10, C14, C16. C11 is split into a structural part (publishable) and a behavioural caveat (limitation).

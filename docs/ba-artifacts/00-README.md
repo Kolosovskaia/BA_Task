@@ -11,7 +11,7 @@ purpose: Navigation and legend for everything in this folder
 
 This folder holds **internal working artifacts** a BA produces while figuring out **what** to put into the final user manual. None of these files are the manual itself.
 
-- **Final user manual** will live in `docs/manual/` (not yet created).
+- **Final user manual** lives in `docs/manual/`.
 - **These files** are the "how we got there" evidence trail.
 - **Design spec with the overall plan** is in `docs/superpowers/specs/2026-04-23-parent-child-manual-plan.md`.
 
@@ -25,12 +25,12 @@ Each file is numbered by **production order**, not by reading priority. If you n
 | 01 | `01-task-contract.md` | What did we agree to deliver? (audience, format, language, scope, deadline, non-goals) | Step 1 |
 | 02 | `02-glossary.md` | What do Russian transcript terms map to in the English manual? | Step 2 |
 | 03 | `03-audience.md` | Who reads this, and what do they already know? | Step 2 |
-| 04 | `04-observation-log.md` | Shot by shot (32 shots), what does the video **show** vs **say** vs **leave out**? | Step 3 |
+| 04 | `04-observation-log.md` | Shot by shot (34 cropped frames: 32 original + 2 replacements), what does the video **show** vs **say** vs **leave out**? | Step 3 |
 | 05 | `05-capability-map.md` | What can this feature actually do, atomically? | Step 4 |
 | 06 | `06-source-matrix.md` | For every statement we might write in the manual, how solid is the source? | Step 5 |
 | 07 | `07-scenarios.md` | What user flows become the how-to pages in the manual? | Step 7 |
 | 08 | `08-ia.md` | How does the final `docs/manual/` folder map onto these scenarios and rules? | Step 8 |
-| 09 | `09-shotlist.md` | Which of the 32 screenshots go where in the final manual, with captions? | Step 9 |
+| 09 | `09-shotlist.md` | Which of the 34 screenshots go where in the final manual, with captions? | Step 9 |
 | 10 | `10-rtm.md` | For every claim we might publish, what's the evidence and where does it land? | Step 10 |
 | 11 | `11-qa-checklist.md` | Did the manual pass the Definition of Done — traceability, accuracy, accessibility, safe-scope publication? | Step 15 |
 | 12 | `12-review-log.md` | What happened when I read the how-tos as a first-time reader, and what got fixed? | Step 16 |
@@ -94,20 +94,20 @@ For each of the 16 claims from observation log, what's the source strength and c
 Five user flows that turn into how-to pages in the final manual:
 
 1. **SC-1 Create a new variant** → `docs/manual/02-howto-create-variant.md`
-2. **SC-2 Attach an existing item as a variant** → `03-howto-attach-existing.md`
-3. **SC-3 Reorder variants and set Pre Chosen** → `04-howto-reorder-variants.md`
-4. **SC-4 Verify the Pre Chosen variant on POS** → part of `04-howto...`
-5. **SC-5 Remove a variant** → `05-howto-remove-variant.md` (with **big warning** on the destructive branch)
+2. **SC-2 Attach an existing item as a variant** → `docs/manual/03-howto-attach-existing.md`
+3. **SC-3 Reorder variants and set Pre Chosen** → `docs/manual/04-howto-reorder-variants.md`
+4. **SC-4 Verify the Pre Chosen variant on POS** → part of `docs/manual/04-howto-reorder-variants.md`
+5. **SC-5 Remove a variant** → `docs/manual/05-howto-remove-variant.md` (with **big warning** on the destructive branch)
 
-Three extra scenarios are held in reserve — they activate only if Maya answers the Round 2 questions with "include in v1" (parent-delete cascade, migration, discounts).
+Three extra scenarios remain outside v1 unless the package is explicitly reopened for a later revision (parent-delete cascade, migration, discounts).
 
 ### 09-shotlist.md — "Which shot goes where"
 
-For each of the 32 screenshots, the file says: does it go into the final manual (and if so, into which doc, which section, with what caption) or is it excluded (and why).
+For each of the 34 screenshots, the file says: does it go into the final manual (and if so, into which doc, which section, with what caption) or is it excluded (and why).
 
-- **19 shots used** across 5 how-tos + 1 reference file.
-- **3 optional shots** included only if length permits.
-- **10 shots excluded** (branding, transitions, generic navigation that the parent manual already covers).
+- **17 published shots used** across 5 how-tos + 1 reference file.
+- **4 optional shots** retained only as backup evidence.
+- **13 shots excluded** (branding, transitions, retired replacements, or generic navigation that the parent manual already covers).
 - **No orphaned shots** — every frame has a routing decision.
 
 ### 10-rtm.md — "Trace every claim to its evidence"
@@ -172,7 +172,7 @@ Same idea as above, different scope:
 
 - "What does the feature actually do?" → `05-capability-map.md`.
 - "How will the manual be structured?" → `08-ia.md`.
-- "What's in scope vs not?" → `01-task-contract.md` + (coming) `07-scope.md`.
+- "What's in scope vs not?" → `01-task-contract.md` + `docs/manual/08-known-limitations.md`.
 - "Can we publish claim X?" → `06-source-matrix.md`.
 - "What words do we use in English?" → `02-glossary.md`.
 - "Who are we writing for?" → `03-audience.md`.

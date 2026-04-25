@@ -1,0 +1,189 @@
+version: 2
+source_dir: ../../screens_cropped
+output_dir: ../_review
+style:
+  accent: "#c73b2f"
+  outline_width: 4
+  badge_radius: 18
+  legend_height: 132
+  legend_padding_x: 36
+  legend_padding_y: 22
+  legend_line_gap: 34
+shots:
+  shot_03:
+    source: shot_03.png
+    output: shot_03_callout.png
+    title: Where Parent-Child lives in admin
+    annotations:
+      - id: 1
+        box: [324, 82, 537, 58]
+        badge_pos: [883, 67]
+        legend: Menu path to the parent item list.
+      - id: 2
+        box: [327, 214, 1305, 56]
+        badge_pos: [1579, 204]
+        legend: Parent item row in the menu list.
+  shot_05:
+    source: shot_05.png
+    output: shot_05_callout.png
+    title: Variants section on a parent item
+    annotations:
+      - id: 1
+        box: [1217, 403, 324, 367]
+        badge_pos: [1186, 392]
+        legend: Variants section on the parent detail page.
+  shot_06:
+    source: shot_06.png
+    output: shot_06_callout.png
+    title: How to create a new variant
+    annotations:
+      - id: 1
+        box: [1236, 716, 292, 40]
+        badge_pos: [1208, 705]
+        legend: Add Variant button.
+  shot_07:
+    source: shot_07.png
+    output: shot_07_callout.png
+    title: Remove a variant from the parent
+    annotations:
+      - id: 1
+        box: [1492, 487, 34, 32]
+        badge_pos: [1466, 479]
+        legend: Click X on the variant row.
+  shot_08:
+    source: shot_08.png
+    output: shot_08_callout.png
+    title: Standalone item before attachment
+    annotations:
+      - id: 1
+        box: [330, 258, 1298, 55]
+        badge_pos: [304, 244]
+        legend: Standalone item row in the subcategory list.
+  shot_09:
+    source: shot_09.png
+    output: shot_09_callout.png
+    title: Parent Item before attachment
+    annotations:
+      - id: 1
+        box: [1236, 592, 294, 49]
+        badge_pos: [1545, 579]
+        legend: Parent Item is set to None (Standalone).
+  shot_10:
+    source: shot_10.png
+    output: shot_10_callout.png
+    title: Select a parent for the existing item
+    annotations:
+      - id: 1
+        box: [1236, 592, 294, 48]
+        badge_pos: [1545, 579]
+        legend: Parent Item dropdown.
+      - id: 2
+        box: [1240, 688, 288, 42]
+        badge_pos: [1546, 676]
+        legend: Choose the parent item from the same subcategory.
+  shot_11:
+    source: shot_11.png
+    output: shot_11_callout.png
+    title: How to create or attach a variant
+    annotations:
+      - id: 1
+        box: [424, 346, 780, 96]
+        badge_pos: [1178, 324]
+        legend: Short Name field for the variant.
+  shot_13:
+    source: shot_13.png
+    output: shot_13_callout.png
+    title: How to reorder variants and set a default
+    annotations:
+      - id: 1
+        box: [1239, 432, 292, 255]
+        badge_pos: [1188, 420]
+        legend: Drag rows in the Variants list to change POS order.
+      - id: 2
+        box: [1402, 612, 83, 45]
+        badge_pos: [1374, 598]
+        legend: Toggle Pre Chosen for the default variant.
+      - id: 3
+        box: [1498, 810, 145, 52]
+        badge_pos: [1466, 794]
+        legend: Save changes.
+  shot_15:
+    source: shot_15.png
+    output: shot_15_callout.png
+    title: How variants appear on POS
+    annotations:
+      - id: 1
+        box: [98, 74, 124, 45]
+        badge_pos: [67, 61]
+        legend: Variant buttons use Short Name labels in saved order.
+      - id: 2
+        box: [141, 74, 44, 45]
+        badge_pos: [208, 61]
+        legend: Pre Chosen variant appears selected by default.
+  shot_17:
+    source: shot_17.png
+    output: shot_17_callout.png
+    title: Product Class is inherited by the variant
+    annotations:
+      - id: 1
+        box: [560, 285, 541, 88]
+        badge_pos: [1122, 272]
+        legend: Product class field in Edit Variant.
+  shot_18:
+    source: shot_18.png
+    output: shot_18_callout.png
+    title: Variant-level modifiers in Edit Variant
+    annotations:
+      - id: 1
+        box: [560, 452, 541, 312]
+        badge_pos: [1122, 440]
+        legend: Modifiers dropdown belongs to the variant itself.
+  shot_19:
+    source: shot_19.png
+    output: shot_19_callout.png
+    title: Color code selector on a variant
+    annotations:
+      - id: 1
+        box: [560, 304, 542, 142]
+        badge_pos: [1122, 292]
+        legend: Color code selector in Display Options.
+  shot_23:
+    source: shot_23.png
+    output: shot_23_callout.png
+    title: Variant summary before adding to the order
+    annotations:
+      - id: 1
+        box: [735, 18, 510, 31]
+        badge_pos: [1266, 54]
+        legend: Parent name, selected Short Name, and chosen modifiers.
+  shot_31:
+    source: shot_31.png
+    output: shot_31_callout.png
+    title: Same X control for variant-born removal
+    annotations:
+      - id: 1
+        box: [1492, 548, 34, 32]
+        badge_pos: [1538, 536]
+        legend: Same X control, but removing this variant deletes it entirely.
+  shot_33:
+    source: shot_33.png
+    output: shot_33_callout.png
+    title: Saved variant now appears on the parent
+    annotations:
+      - id: 1
+        box: [1238, 427, 295, 252]
+        badge_pos: [1187, 415]
+        legend: Saved variant now appears in the parent's Variants list.
+  shot_34:
+    source: shot_34.png
+    output: shot_34_callout.png
+    title: How ProductMix labels a sold variant
+    annotations:
+      - id: 1
+        box: [387, 135, 385, 49]
+        badge_pos: [780, 122]
+        legend: Filter to a narrow time window.
+      - id: 2
+        box: [725, 459, 236, 31]
+        badge_pos: [974, 446]
+        legend: "Composite ProductMix label: parent name plus Short Name."

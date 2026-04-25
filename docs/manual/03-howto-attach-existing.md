@@ -3,7 +3,7 @@ Document type: Diátaxis How-to (task-oriented).
 Target length: 60–100 lines.
 Scenario: SC-2 in docs/ba-artifacts/07-scenarios.md.
 Capabilities: CAP-2 (attach existing), CAP-3 (Short Name), CAP-12 (subcategory scope).
-Screenshots: shot_08, shot_09, shot_10, shot_11, shot_12.
+Screenshots: shot_08, shot_09, shot_10, shot_11, shot_33.
 -->
 
 # How to attach an existing item as a variant
@@ -16,7 +16,7 @@ If you want to create a **new** item that exists only as a variant, follow [How 
 
 - You have admin access to the Gen1POS admin panel.
 - The item you want to attach is currently **standalone** - its `Parent Item` field shows `None (Standalone)`.
-- The target parent item is in the **same subcategory** as the item you want to attach. Items in a different subcategory are not selectable as parents.
+- In the observed flow, the target parent item is in the **same subcategory** as the item you want to attach. Items from a different subcategory are not shown as parent candidates.
 
 ![Standalone item in the subcategory's item list](_assets/shot_08.png)
 *A standalone item appears in the subcategory's item list alongside other items.*
@@ -48,7 +48,7 @@ If you want to create a **new** item that exists only as a variant, follow [How 
 - The item is removed from the subcategory's standalone-item list.
 - On the parent's detail page, the item now appears in the **Variants** section with its **Short Name**.
 
-![Attached item listed inside the parent's Variants section](_assets/shot_12.png)
+![Attached item listed inside the parent's Variants section](_assets/shot_33.png)
 *The formerly-standalone item now appears inside the parent's Variants section.*
 
 ## Notes

@@ -45,7 +45,7 @@ The term *delete* is avoided for the detach operation because it is ambiguous: d
 
 | Term | Definition |
 |---|---|
-| **Parent Item** (field) | A dropdown on a child item's detail page. Values: `None (Standalone)`, or an item from the same subcategory. Selecting a parent here turns the item into a variant. |
+| **Parent Item** (field) | A dropdown on a child item's detail page. In the observed flow, its values are `None (Standalone)` or an item from the same subcategory. Selecting a parent here turns the item into a variant. |
 | **Pre Chosen** | A toggle on a variant. When active, that variant is visually pre-selected on POS when the operator opens the parent. Whether more than one variant can be `Pre Chosen` simultaneously is not documented - see [Known limitations](08-known-limitations.md). |
 | **Product Class** | A classification field (for example, `Food`). On a variant it is inherited from the parent and displayed at the variant level. |
 | **Short Name** | A field that exists only on a variant. Used as the variant-button label on POS, as the second line in the order preview, and as part of the composite label in the ProductMix report. Length and character constraints are not documented - see [Known limitations](08-known-limitations.md). |
@@ -59,7 +59,7 @@ The term *delete* is avoided for the detach operation because it is ambiguous: d
 |---|---|
 | **Admin panel** | The Gen1POS administration interface where parents and variants are configured. The path to a variant: **Menu** → category → subcategory → parent item → **Variants** section → variant. |
 | **POS** (cashier-side) | The interface used by cashiers. A parent on POS opens a row of variant buttons labelled with `Short Name`; the `Pre Chosen` variant is pre-selected. |
-| **Order preview** | The two-line summary of a selected variant in the order in progress: parent name on top, `Short Name` and modifier choices beneath. |
+| **Order preview** | The order summary of a selected variant in the order in progress: parent name together with the `Short Name` and modifier choices. |
 | **Kitchen ticket** | The ticket printed to the kitchen after payment. Receives the item's full identifying name; the exact layout is not documented in v1. |
 | **ProductMix** | The reporting view that lists items sold over a time range. Variants appear under a composite label combining the parent name and the `Short Name`. |
 

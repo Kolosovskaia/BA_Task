@@ -5,18 +5,18 @@ owner: Kseniia (BA, test assignment for AXIOM.tech)
 po: Maya Pivovarova (@mayya_pi)
 feature: Parent-Child Structure (menu item variants in Gen1POS)
 context: HoReCa / restaurant POS
-status: design approved, awaiting PO answers to start Phase 1
+status: executed through drafting and validation; final git-packaging cleanup in progress
 ---
 
 # Parent-Child Structure — User Manual Implementation Plan
 
 ## 0. TL;DR
 
-Descriptive feature-level user manual для Parent-Child Structure в Gen1POS, собираемый из video + normalized transcript + 32 screenshots под условиями **test assignment** (high self-reliance, no admin-panel access, no follow-up calls, minimal PO demands).
+Descriptive feature-level user manual для Parent-Child Structure в Gen1POS, собранный из video + normalized transcript + screenshot archive (`34` cropped frames: `32` original + `2` replacement frames) под условиями **test assignment** (high self-reliance, no admin-panel access, no follow-up calls, minimal PO demands).
 
 Методологический стек подобран прагматично под характеристики фичи (single feature, stable, UI-visible, single-SME): **Diátaxis + Microsoft Writing Style Guide + Minimalism + ISO/IEC/IEEE 26514 + BABOK v3 Elicitation + RTM**. Из черновика `plan.md` сознательно убраны DITA, Information Mapping, JTBD и persona-driven как отдельная дорожка — overhead без выгоды для single-feature MD-мануала.
 
-План: **17 атомарных шагов в 6 фазах** (Framing & Elicitation → Evidence → Scope & IA → Drafting → Validation → Publishing). Средний вес шага — полдня. Phase 6 (Publishing) условная — зависит от ответа PO на вопрос о формате.
+План был реализован как **17 атомарных шагов в 6 фазах** (Framing & Elicitation → Evidence → Scope & IA → Drafting → Validation → Publishing). На текущий момент пакет собран; в работе остались только consistency-pass и git-packaging.
 
 ---
 
@@ -79,13 +79,13 @@ docs/manual/
 ├── 01-explanation.md            # Что такое Parent-Child, зачем, когда (концепт)
 ├── 02-howto-create-variant.md   # Добавить новый вариант
 ├── 03-howto-attach-existing.md  # Привязать существующий айтем
-├── 04-howto-reorder.md          # Переупорядочить + pre-chosen
-├── 05-howto-remove.md           # Удалить вариант (+ логика возврата/исчезновения)
+├── 04-howto-reorder-variants.md # Переупорядочить + pre-chosen
+├── 05-howto-remove-variant.md   # Удалить вариант (+ логика возврата/исчезновения)
 ├── 06-reference-rules.md        # Правила: Product Class inheritance, Short Name,
 │                                #   POS/Kitchen/Report display, deletion logic
 ├── 07-reference-glossary.md     # Термины (normalized)
 ├── 08-known-limitations.md      # Not documented in v1 / out-of-scope
-└── _assets/                     # Screenshots (уже есть 32 кадра в screens_cropped/)
+└── _assets/                     # Published screenshots used by the manual
 ```
 
 ### 3.2 Гарантии качества (DoD для всего пакета)
@@ -97,13 +97,13 @@ docs/manual/
 - **Accessibility (ISO 26514 §8.2)**: alt-тексты скриншотов, H1–H3 без пропусков, plain language.
 - **Safe-scope publication**: в body только confirmed behaviour; inferred / unknown — в `08-known-limitations.md`.
 
-### 3.3 Формат публикации (assumption, under PO confirmation)
+### 3.3 Формат публикации (resolved for v1)
 
-Базово — Markdown в `docs/manual/` c публикацией в GitHub-репо и отправкой ссылки PO. Альтернатива — экспорт в PDF. Уточняется в Q-2 к PO.
+V1 публикуется как Markdown-пакет в `docs/manual/` внутри GitHub-репо. Отдельный PDF-export для v1 не требуется.
 
 ---
 
-## 4. Gap-анализ — чего не хватает прямо сейчас
+## 4. Repository state before handover
 
 ### 4.1 Что уже есть ✅
 
@@ -114,26 +114,22 @@ docs/manual/
 | Transcript (SRT) | `docs/transcription.srt` | OK |
 | Storyboard — film | `docs/narrative_film_storyboard-2026-04-24.md` | 32 shots, RU/EN mix |
 | Storyboard — commercial | `docs/product_commercial_storyboard-2026-04-24.md` | 20 shots, EN |
-| Full screens | `docs/screens_full/*.png` | 32 шт |
-| Cropped screens | `docs/screens_cropped/*.png` | 32 шт |
-| Preliminary fact extraction (F1–F13) | `docs/plan.md` | Не в формате RTM |
-| Preliminary gap list (G1–G12) | `docs/plan.md` | Не провалидирован с SME |
+| Cropped screens archive | `docs/screens_cropped/*.png` | 34 frames (`32` original + `2` replacements: `shot_33`, `shot_34`) |
+| Final manual | `docs/manual/00-index.md` … `08-known-limitations.md` | Drafted and validated |
+| Published screenshot set | `docs/manual/_assets/shot_*.png` | 17 published annotated shots |
+| BA traceability pack | `docs/ba-artifacts/*.md` | Filled and cross-linked |
 
-### 4.2 Чего критически не хватает ❌
+### 4.2 Что осталось до handover ⚙️
 
-| ID | Пробел | Критичность | Как закрывается |
+| ID | Остаток | Критичность | Как закрывается |
 |---|---|:-:|---|
-| M1 | Scope contract с PO (audience / format / deadline / scope) | 🔴 | Q-1, Q-2, Q-3 |
-| M2 | Project style guide / template других мануалов | 🟡 | Q-2 (часть про template) |
-| M3 | Язык финального мануала | 🔴 | Q-4 |
-| M4 | Glossary v1 — нормализация терминов (variant/child/айтем/parent-child) | 🟡 | Phase 1 внутри работы |
-| M5 | Observation Log (fact / inferred / unknown) | 🟡 | Phase 2 |
-| M6 | RTM skeleton | 🟢 | сами делаем |
-| M7 | Persona validation (H1 = гипотеза) | 🟡 | частично Q-1 |
+| H1 | Final consistency pass across `manual`, `ba-artifacts`, and spec | 🔴 | Final repo review before commit |
+| H2 | Final validation of markdown links, screenshot references, and shot numbering | 🔴 | Automated checks + spot review |
+| H3 | Git packaging / handover note | 🟡 | Prepare final commit-ready package |
 
-Ранее заложенный M2 (admin-panel access) и M4 (SME follow-up session) **убраны из gap-листа сознательно**: не запрашиваем по констрейнтам test assignment. Edge-cases, не видимые в скринкасте, переходят в `08-known-limitations.md` как в осознанный scope-choice v1, а не как в gap.
+Phase 1–5 уже выполнены. Остаток — это не исследовательские пробелы, а финальная упаковка и контроль согласованности перед handover.
 
-**Блокеры старта drafting**: M1, M3. Остальное — работа параллельно.
+**Блокеры handover**: H1, H2. Остальное — упаковка.
 
 ---
 
@@ -168,9 +164,9 @@ docs/manual/
 |:-:|---|---|---|---|
 | 6 | **Scope & Confidence Register** | Capability Map + Source Matrix + ответ PO на Q-3 | `docs/ba-artifacts/07-scope.md` | 3 bucket: in-scope-v1 / conditional / out-of-scope; каждая capability назначена |
 | 7 | **Scenario Catalogue** | Scope + Audience | `docs/ba-artifacts/08-scenarios.md` | 5 сценариев (create / attach / reorder / pre-chosen / remove) с trigger + expected result |
-| 8 | **Information Architecture (Diátaxis TOC)** | Scenarios + Capability Map | `docs/ba-artifacts/09-ia.md` | TOC для `docs/manual/`; каждый файл назначен в Diátaxis-слот |
-| 9 | **Screenshot Shot-list** | Storyboards + IA + screens_cropped | `docs/ba-artifacts/10-shotlist.md` | Для каждого how-to — shot_XX.png + caption; 0 «осиротевших» скринов |
-| 10 | **RTM skeleton** | IA + Source Matrix | `docs/ba-artifacts/11-rtm.md` | Строка для каждого TOC-пункта: claim / source / confidence |
+| 8 | **Information Architecture (Diátaxis TOC)** | Scenarios + Capability Map | `docs/ba-artifacts/08-ia.md` | TOC для `docs/manual/`; каждый файл назначен в Diátaxis-слот |
+| 9 | **Screenshot Shot-list** | Storyboards + IA + screens_cropped | `docs/ba-artifacts/09-shotlist.md` | Для каждого how-to — shot_XX.png + caption; 0 «осиротевших» скринов |
+| 10 | **RTM skeleton** | IA + Source Matrix | `docs/ba-artifacts/10-rtm.md` | Строка для каждого TOC-пункта: claim / source / confidence |
 
 ### Phase 4 — Drafting (4 шага)
 
@@ -185,8 +181,8 @@ docs/manual/
 
 | № | Шаг | Вход | Артефакт | Метрика / DoD |
 |:-:|---|---|---|---|
-| 15 | **Internal QA** (ISO 26514 checklist + RTM fill-up) | Draft v1 | `docs/ba-artifacts/12-qa-checklist.md` + filled `docs/ba-artifacts/11-rtm.md` | 100% RTM заполнен; 0 FAIL в 26514; 0 TODO |
-| 16 | **Self cognitive walkthrough + consistency pass** | Draft v1 | `docs/ba-artifacts/13-review-log.md` | Сама прохожу 2 сценария по мануалу «как новичок»; фиксирую блоки; все fixes применены |
+| 15 | **Internal QA** (ISO 26514 checklist + RTM fill-up) | Draft v1 | `docs/ba-artifacts/11-qa-checklist.md` + filled `docs/ba-artifacts/10-rtm.md` | 100% RTM заполнен; 0 FAIL в 26514; 0 TODO |
+| 16 | **Self cognitive walkthrough + consistency pass** | Draft v1 | `docs/ba-artifacts/12-review-log.md` | Сама прохожу 2 сценария по мануалу «как новичок»; фиксирую блоки; все fixes применены |
 
 ### Phase 6 — Publishing (1 шаг, условный по Q-2)
 
@@ -229,11 +225,9 @@ docs/manual/
 
 ## 7. Что происходит дальше
 
-1. User утверждает spec → коммит в git.
-2. Step 1: отправляем Telegram-батч PO, параллельно фиксируем разумные defaults в `01-task-contract.md` на случай медленного ответа.
-3. Пока ждём ответ — начинаем Phase 2 (Evidence extraction) по тому, что уже есть: video + transcript + screens. Это не зависит от ответов PO.
-4. После ответа PO — корректируем Scope & IA (Phase 3) под актуальные решения.
-5. Далее по плану.
+1. Завершаем final consistency-pass по `manual`, `ba-artifacts`, и spec.
+2. Прогоняем финальную проверку ссылок, шотов и формулировок safe-scope publication.
+3. Формируем commit-ready пакет и готовим handover в git.
 
 ---
 

@@ -3,7 +3,7 @@ Document type: Diátaxis How-to (task-oriented).
 Target length: 60–100 lines.
 Scenario: SC-1 in docs/ba-artifacts/07-scenarios.md.
 Capabilities: CAP-1 (create variant) + CAP-3 (Short Name field).
-Screenshots: shot_05, shot_06, shot_11, shot_12 (see docs/ba-artifacts/09-shotlist.md).
+Screenshots: shot_05, shot_06, shot_11, shot_33 (see docs/ba-artifacts/09-shotlist.md).
 Style: MS Writing Style Guide procedure pattern - imperative mood, UI labels verbatim.
 -->
 
@@ -48,8 +48,8 @@ If instead you want to turn an existing standalone item into a variant, follow [
 - A `Product updated` confirmation is shown.
 - The new variant appears in the parent's **Variants** section with its **Short Name**.
 
-![New variant listed inside the parent's Variants section](_assets/shot_12.png)
-*After saving, the new variant appears in the parent's Variants list with its Short Name and a Product updated confirmation.*
+![New variant listed inside the parent's Variants section](_assets/shot_33.png)
+*After saving, the new variant appears in the parent's Variants list with its Short Name.*
 
 ## Notes
 

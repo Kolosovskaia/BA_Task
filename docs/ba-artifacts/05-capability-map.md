@@ -86,7 +86,7 @@ Atomic capabilities the feature offers, each with trigger, steps, result, precon
 ### CAP-9 — Order preview / receipt composition
 
 - **Trigger**: Operator adds a variant to the order on POS.
-- **Effect**: Order line displays `parent name` with `short name` underneath (two-line format).
+- **Effect**: Order line displays the `parent name` together with the `short name` and selected modifiers.
 - **Evidence**: C13 (shot 23).
 
 ### CAP-10 — Kitchen ticket format (claim-only; not verifiable in source)

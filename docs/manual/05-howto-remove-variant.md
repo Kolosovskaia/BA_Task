@@ -60,7 +60,6 @@ If you want to take the variant off this parent but keep the item available - fo
 
 ## Notes
 
-- Whether the parent automatically becomes a standalone item once its last variant is removed is **not documented in v1** - see [Known limitations](08-known-limitations.md).
 - The detach behaviour for the **variant-born** branch is described by the product owner but not separately re-demonstrated in the source materials. Treat the rule above as authoritative; flag any deviation observed in testing.
 
 ## What's next

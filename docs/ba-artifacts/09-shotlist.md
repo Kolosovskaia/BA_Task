@@ -3,7 +3,7 @@ id: 09-shotlist
 title: Screenshot Shot-list — Parent-Child Structure Manual
 date: 2026-04-24
 sources:
-  - docs/screens_cropped/shot_01.png … shot_32.png (32 frames extracted from video.mp4)
+  - docs/screens_cropped/shot_01.png … shot_34.png (32 original frames + 2 replacement frames extracted from video.mp4)
   - 08-ia.md (target document structure)
   - 04-observation-log.md (what each shot depicts)
 phase: 3 — Scope lock & IA (Step 9)
@@ -13,7 +13,7 @@ phase: 3 — Scope lock & IA (Step 9)
 
 ## Purpose
 
-Assign each of the 32 screenshots to a specific location in the final manual `docs/manual/`, with a caption. Ensures:
+Assign each of the 34 screenshots to a specific location in the final manual `docs/manual/`, with a caption. Ensures:
 
 - **No orphaned shots** — every shot either has a home or is explicitly marked as excluded.
 - **No visual redundancy** — we don't show the same thing twice across adjacent docs.
@@ -33,15 +33,15 @@ All captions are English (per PO Round 1 Q-4 — EN-only final).
 
 ## Path convention
 
-- **Source of truth**: `docs/screens_cropped/shot_XX.png` — full 32-shot archive. Referenced by BA artifacts.
-- **Published to manual**: `docs/manual/_assets/shot_XX.png` — a curated copy of the 20 shots used in the final manual. Referenced by `docs/manual/*.md` with the relative path `_assets/shot_XX.png`.
+- **Source of truth**: `docs/screens_cropped/shot_XX.png` — full 34-shot archive. Referenced by BA artifacts.
+- **Published to manual**: `docs/manual/_assets/shot_XX.png` — a curated copy of the 17 published shots used in the final manual. Referenced by `docs/manual/*.md` with the relative path `_assets/shot_XX.png`.
 - **Reason for the split**: short relative paths (`_assets/shot_XX.png`) render reliably in VSCode markdown preview, GitHub, and other renderers — unlike parent-traversal paths (`../screens_cropped/...`) which can fail in VSCode preview.
 
 ## Summary of decisions
 
-- **Used**: 19 shots across 5 how-to + 1 reference file.
-- **Optional** (used only if length allows): 3 shots.
-- **Excluded**: 10 shots (branding, transitions, generic navigation).
+- **Used**: 17 published shots across 5 how-to + 1 reference file.
+- **Optional** (kept as backup evidence only): 4 shots.
+- **Excluded**: 13 shots (branding, transitions, retired replacements, generic navigation).
 - **Orphaned**: 0.
 
 ## 01-explanation.md — Concept page
@@ -58,7 +58,7 @@ All captions are English (per PO Round 1 Q-4 — EN-only final).
 | `shot_05.png` | Step 2 context | The parent item's detail page has a Variants section where child items are listed. | Anchors the reader to the Variants section before they click anything. |
 | `shot_06.png` | Step 3 Add Variant | The Add Variant button sits at the bottom of the Variants section. | Points to the specific UI control for the step. |
 | `shot_11.png` | Step 5 Short Name | When an item is configured as a variant, a Short Name field becomes editable on its detail page. | Shows the field that appears only in the variant context. |
-| `shot_12.png` | Expected result | After saving, the new variant appears in the parent's Variants list with its Short Name and a Product updated confirmation. | Closes the loop — reader sees what success looks like. |
+| `shot_33.png` | Expected result | After saving, the new variant appears in the parent's Variants list with its Short Name. | Closes the loop — reader sees the final state on the parent page. |
 
 ## 03-howto-attach-existing.md — How to attach an existing item
 
@@ -68,7 +68,7 @@ All captions are English (per PO Round 1 Q-4 — EN-only final).
 | `shot_09.png` | Step 1 opening the item | The standalone item's Parent Item field is set to None (Standalone). | Shows the pre-attachment state of the critical field. |
 | `shot_10.png` | Step 2 selecting parent | The Parent Item dropdown lists candidate parents from the same subcategory. | Illustrates the subcategory-scope constraint visually. |
 | `shot_11.png` | Step 3 Short Name | After selecting a parent, the Short Name field appears and must be filled before saving. | Same control as in the create flow — reinforces consistency. |
-| `shot_12.png` | Expected result | The formerly-standalone item now appears inside the parent's Variants section. | Confirms the attachment succeeded. |
+| `shot_33.png` | Expected result | The formerly-standalone item now appears inside the parent's Variants section. | Confirms the attachment succeeded on the final parent page. |
 
 ## 04-howto-reorder-variants.md — How to reorder and set a default (Pre Chosen)
 
@@ -97,8 +97,9 @@ Reference documents use fewer illustrations; included shots are for rule clarifi
 | `shot_17.png` | R3 Product Class + R6 Display — Edit Variant | The Edit Variant modal shows the inherited Product Class field and variant-level fields such as Price, SKU, Taxes. | Primary illustration for the inheritance rule. |
 | `shot_18.png` | R7 Modifiers on variants | The Customization section of Edit Variant exposes independent Modifiers and Allergens dropdowns for the variant. | Proof that the fields exist per variant (structural claim). |
 | `shot_19.png` | R8 Color Code | The Display Options section contains a Color code selector; its behaviour in the Parent-Child context is not documented in v1. | Anchor for the limitation note. |
-| `shot_23.png` | R6 Display — Order preview | An added variant appears in the order summary as two lines: the parent name on top, the Short Name and modifier selections beneath. | Canonical example of the order preview format. |
-| `shot_27.png` | R6 Display — ProductMix | In the ProductMix report, variants appear under a composite label that includes both the parent name and the Short Name. | Visual evidence resolving the "variant name vs parent name" ambiguity. |
+| `shot_23.png` | R6 Display — Order preview | In the order summary, the selected variant shows the parent name together with the Short Name and modifier selections. | Canonical example of the order preview format. |
+| `shot_34.png` | R6 Display — ProductMix | In the ProductMix report, variants appear under a composite label that includes both the parent name and the Short Name. | Visual evidence resolving the "variant name vs parent name" ambiguity with a readable filtered frame. |
+| `shot_28.png` *(optional)* | R6 Display — ProductMix tooltip | Hovering the ProductMix segment shows the same composite label for the sold variant. | Backup reinforcement for the ProductMix naming claim if tooltip evidence is useful. |
 | `shot_29.png` *(optional)* | R6 Display — ProductMix time-filtered | When the report is filtered to a narrow window, only the specific variant's composite label appears. | Reinforces the previous shot; include only if clarity benefits. |
 
 ## 07-reference-glossary.md — Glossary
@@ -111,23 +112,23 @@ No screenshots. Text-only document by design.
 
 ## Excluded shots (and why)
 
-These 10 shots are deliberately not used:
+These 12 shots are deliberately not used:
 
 | Shot | Content | Reason for exclusion |
 |:-:|---|---|
 | `shot_01.png` | BA Task title slide | Presentation chrome, not product content. |
 | `shot_02.png` | Presenter introduction (MP / AXIOM.tech) | Presentation chrome. |
 | `shot_04.png` | Left sidebar expanded showing Menu categories | Pure navigation; not feature-specific. Parent manual covers navigation. |
-| `shot_14.png` | "Product updated" toast (second occurrence) | Redundant — `shot_12.png` already shows a Product updated toast in the relevant context. |
+| `shot_12.png` | Earlier expected-result frame with open modal | Retired — replaced by `shot_33.png`, which shows the final parent-page state cleanly. |
+| `shot_14.png` | "Product updated" toast (second occurrence) | Redundant transient toast; the final-state evidence now comes from `shot_33.png`, and the toast is already documented in text. |
 | `shot_16.png` | Browser tab switch | Transition, not product content. |
 | `shot_20.png` | Almondine Tarte detail page (generic) | No new information beyond shots already used. |
 | `shot_24.png` | Payment screen | Payment flow is not part of Parent-Child Structure manual; kitchen ticket format is not visible here either. |
 | `shot_25.png` | Navigation to Reporting | Generic navigation; parent manual covers. |
-| `shot_26.png` | ProductMix before filter | Transitional state before the important `shot_27.png`. |
+| `shot_26.png` | ProductMix before filter | Transitional state before the important `shot_34.png`. |
+| `shot_27.png` | Earlier ProductMix frame | Retired — replaced by `shot_34.png`, which isolates the readable composite label. |
 | `shot_30.png` | Navigation back to the menu | Generic navigation. |
 | `shot_32.png` | Outro branding | Presentation chrome. |
-
-_(Note: `shot_28.png` is technically listed but the tooltip content is essentially the same claim as `shot_27.png` + `shot_29.png`; acts as reinforcement if needed — treat as optional.)_
 
 ## Cross-check: coverage of claims from `04-observation-log.md`
 
@@ -136,7 +137,7 @@ Every claim (C1–C16) has at least one shot assigned to its Target doc:
 | Claim | Shot anchor | Target doc |
 |---|---|---|
 | C1 — Feature name + admin location | `shot_03.png` | 01-explanation |
-| C2 — Variants section on parent | `shot_05.png` | 01-explanation, 02-howto-create |
+| C2 — Variants section on parent | `shot_05.png`, `shot_33.png` | 01-explanation, 02-howto-create, 03-howto-attach |
 | C3 — Two ways to add variant | `shot_06.png`, `shot_10.png` | 02-howto-create, 03-howto-attach |
 | C4 — Subcategory scope | `shot_10.png` | 03-howto-attach, 06-reference-rules |
 | C5 — Short Name appears on variants | `shot_11.png` | 02, 03, 06-reference-rules |
@@ -150,7 +151,7 @@ Every claim (C1–C16) has at least one shot assigned to its Target doc:
 | C12 — POS tappable buttons | `shot_15.png` | 04-howto-reorder, 06-reference-rules |
 | C13 — Order preview two-line | `shot_23.png` | 06-reference-rules R6 |
 | C14 — Kitchen ticket "full name" | *(no visual)* | 06-reference-rules R6 + 08-known-limitations |
-| C15 — ProductMix composite label | `shot_27.png` | 06-reference-rules R6 |
+| C15 — ProductMix composite label | `shot_34.png` | 06-reference-rules R6 |
 | C16 — Color code caveat | `shot_19.png` | 06-reference-rules R8 + 08-known-limitations |
 
 C14 is the only claim with no direct visual — matches the Source Matrix ruling that its format is not shown. Caption in `06-reference-rules.md` phrases it cautiously.

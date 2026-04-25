@@ -57,10 +57,10 @@ Same prior-knowledge baseline; same reading context.
 
 | # | Job | Where in the manual it's served |
 |---|---|---|
-| J1 | "I need to check what happens when a variant is detached — does it disappear or return to the item list?" | `06-reference-rules.md` (Detach behaviour) + `05-howto-remove.md` |
+| J1 | "I need to check what happens when a variant is detached — does it disappear or return to the item list?" | `06-reference-rules.md` (Detach behaviour) + `05-howto-remove-variant.md` |
 | J2 | "I need to verify Short Name is displayed correctly in POS / Kitchen / ProductMix — where does each field show up?" | `06-reference-rules.md` (Display matrix) |
 | J3 | "I need to understand how Product Class is inherited from parent to variant — is it editable on the variant?" | `06-reference-rules.md` (Inheritance) |
-| J4 | "I need to reproduce the end-to-end flow: create parent → add variant → set pre-chosen → verify on POS." | `02-howto-create-variant.md` + `04-howto-reorder.md` |
+| J4 | "I need to reproduce the end-to-end flow: create parent → add variant → set pre-chosen → verify on POS." | `02-howto-create-variant.md` + `04-howto-reorder-variants.md` |
 | J5 | "I need to know what is NOT yet documented so I don't assume behaviour." | `08-known-limitations.md` |
 
 ## Tone guidance (derived from audience)
