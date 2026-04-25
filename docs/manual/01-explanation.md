@@ -2,8 +2,8 @@
 Document type: Diátaxis Explanation (understanding-oriented).
 Target length: ≤ 1 page.
 Audience: internal testers and team members (already familiar with Gen1POS basics).
-Do not add step-by-step instructions here — those live in the how-to pages (02–05).
-Do not add rule tables here — those live in 06-reference-rules.md.
+Do not add step-by-step instructions here - those live in the how-to pages (02–05).
+Do not add rule tables here - those live in 06-reference-rules.md.
 -->
 
 # Parent-Child Structure
@@ -22,8 +22,8 @@ This page assumes you already know how to create and configure a basic menu item
 
 Two terms carry most of the weight:
 
-- **Parent item** — a menu item that holds one or more variants. On its detail page you will see a `Variants` section listing the children.
-- **Variant** — a menu item that belongs to a parent. In the UI and elsewhere in this documentation, child items are called **variants**.
+- **Parent item** - a menu item that holds one or more variants. On its detail page you will see a `Variants` section listing the children.
+- **Variant** - a menu item that belongs to a parent. In the UI and elsewhere in this documentation, child items are called **variants**.
 
 A menu item is always in exactly one of three states: **standalone** (no parent, no children), **parent** (has at least one variant), or **variant** (belongs to a parent).
 
@@ -54,7 +54,7 @@ flowchart TD
 A variant inherits the parent's `Product Class`; the variant keeps its own `Price`, `Modifiers`, and other fields. The exact inheritance and per-variant rules are listed in the rules reference.
 
 ![Variants section on a parent's detail page](_assets/shot_05.png)
-*The Variants section of the Almondine Tarte detail page lists three variants — 3″, 5″, and 8″.*
+*The Variants section of the Almondine Tarte detail page lists three variants - 3″, 5″, and 8″.*
 
 ## How a variant comes into existence
 
@@ -63,7 +63,7 @@ A variant appears in a parent's `Variants` section in one of two ways:
 - **Created inside the parent.** Clicking `Add Variant` on the parent's detail page creates a brand-new item that exists only as a variant.
 - **Attached from the item list.** Opening an existing standalone item and choosing a parent from the `Parent Item` dropdown turns that item into a variant of the chosen parent. The candidate parent must be in the same subcategory.
 
-The two origins matter because **detach behaviour differs based on origin** — see how to remove a variant.
+The two origins matter because **detach behaviour differs based on origin** - see how to remove a variant.
 
 ## Where it shows up across the product
 

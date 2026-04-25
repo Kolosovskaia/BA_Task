@@ -4,14 +4,14 @@ Target length: 60–100 lines.
 Scenario: SC-1 in docs/ba-artifacts/07-scenarios.md.
 Capabilities: CAP-1 (create variant) + CAP-3 (Short Name field).
 Screenshots: shot_05, shot_06, shot_11, shot_12 (see docs/ba-artifacts/09-shotlist.md).
-Style: MS Writing Style Guide procedure pattern — imperative mood, UI labels verbatim.
+Style: MS Writing Style Guide procedure pattern - imperative mood, UI labels verbatim.
 -->
 
 # How to create a new variant
 
-Use this procedure to add a brand-new variant under an existing parent item — for example, to add a `5"` option to `Almondine Tarte`.
+Use this procedure to add a brand-new variant under an existing parent item - for example, to add a `5"` option to `Almondine Tarte`.
 
-If instead you want to turn an existing standalone item into a variant, follow [How to attach an existing item as a variant](03-howto-attach-existing.md) — the procedure below creates a **new** item that exists only as a variant.
+If instead you want to turn an existing standalone item into a variant, follow [How to attach an existing item as a variant](03-howto-attach-existing.md) - the procedure below creates a **new** item that exists only as a variant.
 
 ## Before you start
 
@@ -34,9 +34,9 @@ If instead you want to turn an existing standalone item into a variant, follow [
    ![Add Variant button at the bottom of the Variants section](_assets/shot_06.png)
    *The Add Variant button sits at the bottom of the Variants section.*
 
-4. Fill in the variant's fields (`Name`, `Price`, and others) using the same procedure as for a basic menu item. `Product Class` is inherited from the parent and does not need to be set — see [Rules reference](06-reference-rules.md) for the inheritance rule.
+4. Fill in the variant's fields (`Name`, `Price`, and others) using the same procedure as for a basic menu item. `Product Class` is inherited from the parent and does not need to be set - see [Rules reference](06-reference-rules.md) for the inheritance rule.
 
-5. In the **Short Name** field, enter the label that will be shown on POS and in reports — for example, `5"`.
+5. In the **Short Name** field, enter the label that will be shown on POS and in reports - for example, `5"`.
 
    ![Short Name field on a variant's detail page](_assets/shot_11.png)
    *When an item is configured as a variant, a Short Name field becomes editable on its detail page.*
@@ -53,11 +53,11 @@ If instead you want to turn an existing standalone item into a variant, follow [
 
 ## Notes
 
-- The variant you just created is **variant-born** — it exists only inside the parent. If you later detach it, the item is permanently deleted; it does not return to the subcategory's item list. See [How to remove a variant](05-howto-remove-variant.md) for the detach behaviour.
+- The variant you just created is **variant-born** - it exists only inside the parent. If you later detach it, the item is permanently deleted; it does not return to the subcategory's item list. See [How to remove a variant](05-howto-remove-variant.md) for the detach behaviour.
 - No length or character constraints on `Short Name` are documented. See [Known limitations](08-known-limitations.md).
 
 ## What's next
 
-- Set the display order of variants and nominate a default — [How to reorder variants and set a default](04-howto-reorder-variants.md).
-- Attach an existing standalone item as a variant — [How to attach an existing item](03-howto-attach-existing.md).
-- Remove a variant — [How to remove a variant](05-howto-remove-variant.md).
+- Set the display order of variants and nominate a default - [How to reorder variants and set a default](04-howto-reorder-variants.md).
+- Attach an existing standalone item as a variant - [How to attach an existing item](03-howto-attach-existing.md).
+- Remove a variant - [How to remove a variant](05-howto-remove-variant.md).

@@ -32,8 +32,10 @@ Each file is numbered by **production order**, not by reading priority. If you n
 | 08 | `08-ia.md` | How does the final `docs/manual/` folder map onto these scenarios and rules? | Step 8 |
 | 09 | `09-shotlist.md` | Which of the 32 screenshots go where in the final manual, with captions? | Step 9 |
 | 10 | `10-rtm.md` | For every claim we might publish, what's the evidence and where does it land? | Step 10 |
+| 11 | `11-qa-checklist.md` | Did the manual pass the Definition of Done — traceability, accuracy, accessibility, safe-scope publication? | Step 15 |
+| 12 | `12-review-log.md` | What happened when I read the how-tos as a first-time reader, and what got fixed? | Step 16 |
 
-**Step 6** (Scope Register) is not yet produced — blocked on Round 2 answers from PO.
+**Step 6** (Scope Register) was not produced — per user direction on 2026-04-25, Round 2 PO answers are not sought for v1; UK1–UK5 stay as out-of-scope-for-v1 entries in `docs/manual/08-known-limitations.md` instead of triggering scope renegotiation.
 
 ## Human-language summary per file
 
@@ -178,8 +180,8 @@ Same idea as above, different scope:
 
 ## What's still missing (to be produced)
 
-- `07-scope.md` (Step 6) — awaiting PO Round 2 answers.
-- `11-…` QA artifacts (Phase 5).
+- `07-scope.md` (Step 6) — not produced for v1 (Round 2 PO answers not sought).
+- All other artifacts (Steps 1–16 of the plan) — produced. Phase 6 Step 17 (Publish & Handover) is git-publication of the repository at the current state.
 
 ## Note on numbering
 
